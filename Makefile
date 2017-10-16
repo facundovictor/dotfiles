@@ -10,5 +10,7 @@ powerline:
 	find ./etc/powerline/ -type d -exec chmod 755 \{} \;
 	cp -ru ./etc/powerline/ /etc/
 	chown -R root:root /etc/powerline/
+	mkdir -p ~/.config/
+	ln -s /etc/powerline/ ~/.config/powerline/
 
 all: profile powerline
