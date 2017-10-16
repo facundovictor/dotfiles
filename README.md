@@ -5,16 +5,12 @@ In progress...
 TODO: Things to add here:
 
 1. Automated install of:
-	- vim
-	- tmux
-	- powerline
-	- fzf
+	- vim (TODO: link installer)
+	- tmux (TODO: link installer)
+	- fzf (TODO: link installer)
 	- dependencies ?
-	- global dots for all users ?
 
-2. profile.d
-
-3. tools in /opt
+2. tools in /opt
 
  - dockviz
  - ctop
@@ -22,6 +18,12 @@ TODO: Things to add here:
  - recorder
  - phantomjs
  - virtualenvwrapper
+
+# Available goals
+
+- powerline: It sets up powerline.
+
+- porfile: It sets up all aliases, bindings, and general configs.
 
 # Steps to install
 
