@@ -1,0 +1,9 @@
+[submodule "submodules/vim-config"]
+	path = submodules/vim-config
+	url = git@github.com:facundovictor/vim-config.git
+[submodule "submodules/fzf-global-installer"]
+	path = submodules/fzf-global-installer
+	url = git@github.com:facundovictor/fzf-global-installer.git
+[submodule "submodules/tmux-config"]
+	path = submodules/tmux-config
+	url = git@github.com:facundovictor/tmux-config.git
