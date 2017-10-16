@@ -6,6 +6,7 @@ profile:
 	chown -R root:root /etc/profile.d/
 
 powerline:
+	dnf install powerline powerline-fonts
 	find ./etc/powerline/ -type f -exec chmod 644 \{} \;
 	find ./etc/powerline/ -type d -exec chmod 755 \{} \;
 	cp -ru ./etc/powerline/ /etc/
