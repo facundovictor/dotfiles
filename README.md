@@ -18,7 +18,15 @@ TODO: Things to add here:
 
  - dockviz
  - ctop
+ - decompose
  - recorder
  - phantomjs
  - virtualenvwrapper
 
+# Steps to install
+
+Each make gaol installs a different dotfile. The default goal is `all`, which executes them all.
+
+```sh
+make
+```
