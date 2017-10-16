@@ -11,6 +11,6 @@ powerline:
 	cp -ru ./etc/powerline/ /etc/
 	chown -R root:root /etc/powerline/
 	mkdir -p ~/.config/
-	ln -s /etc/powerline/ ~/.config/powerline/
+	ln -s ~/.config/powerline/ /etc/powerline/
 
 all: profile powerline
