@@ -1,5 +1,12 @@
 .DEFAULT_GOAL := all
 
+git:
+	dnf install git
+	mkdir -p /etc/git/
+	cp -u ./etc/git/.gitconfig /etc/git/.gitconfig
+	chmod 644 /etc/git/.gitconfig
+	ln -s /etc/git/.gitconfig ~/.gitconfig
+
 ripgrep:
 	dnf copr enable carlwgeorge/ripgrep
 	dnf install ripgrep
