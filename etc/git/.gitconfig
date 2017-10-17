@@ -1,0 +1,52 @@
+[alias]
+    # Shortcuts
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+
+    # Get info of a git object
+    type = cat-file -t
+    dump = cat-file -p
+
+    # Listing the History in a tree format
+    hist = log --pretty=format:'%h %ad | [%an] %s%d ' --graph --date=relative
+
+    # Lis a file history
+    fhist = log --decorate --follow -p --
+
+    # For listing commits with details (Author, date, changes, etc).
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    le = log --oneline --decorate
+
+    # For listing conflicts
+    ls-c = diff --name-only --diff-filter=U
+    ll-c = ls-files -u
+
+    # For comparing files
+    vdiff = difftool --tool=vimdiff
+
+    # For showing the differenes between the staged changes and the original files (HEAD)
+    sdiff = diff --staged
+
+    # For searching files that are tracked by git.
+    find = "! git ls-files | fzf"
+
+    # For changing the GIT_AUTHOR_DATE and GIT_COMMITER_DATE
+    chdate = "!git filter-branch --env-filter \"if [ \\$GIT_COMMIT = '$1' ]; then export GIT_AUTHOR_DATE='$2'; export GIT_COMMITTER_DATE='$2'; fi\" && rm -rf \"$(git rev-parse --git-dir)/refs/original/\""
+
+    # For picking a stash
+    stash-pick = "! git stash list | fzf --reverse --height='50%' --color dark --preview=\"echo {1} | cut -d':' -f1 | xargs -I % git show -p --color %\" | cut -d':' -f1"
+
+    # For picking a file from stage
+    modified-file-pick = "! git status --porcelain | awk '{print $2;}' | fzf --reverse --height='50%' --color light --preview=\"git diff --color {}\""
+
+    ap ="! git add -p $(git modified-file-pick)"
+
+[user]
+    name = Facundo Victor
+    email = facundovt@gmail.com
+[color]
+    ui = auto
