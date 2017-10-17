@@ -1,5 +1,10 @@
 .DEFAULT_GOAL := all
 
+ctop:
+	mkdir -p /opt/ctop/
+	wget https://github.com/bcicen/ctop/releases/download/v0.6.1/ctop-0.6.1-linux-amd64 -O /opt/ctop/ctop
+	chmod u+x /opt/ctop/ctop
+
 profile:
 	chmod 644 ./etc/profile.d/*
 	cp -u ./etc/profile.d/* /etc/profile.d/
@@ -14,4 +19,4 @@ powerline:
 	mkdir -p ~/.config/
 	ln -s /etc/powerline/ ~/.config/powerline
 
-all: profile powerline
+all: profile powerline ctop
