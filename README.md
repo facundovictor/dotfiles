@@ -25,6 +25,12 @@ TODO: Things to add here:
 
 - porfile: It sets up all aliases, bindings, and general configs.
 
+- (ctop)[https://github.com/bcicen/ctop]: Add ctop installation
+
+- (ripgrep)[https://github.com/BurntSushi/ripgrep]:
+
+- (ag)[https://github.com/ggreer/the_silver_searcher]: The silver searcher
+
 # Steps to install
 
 Each make gaol installs a different dotfile. The default goal is `all`, which executes them all.
