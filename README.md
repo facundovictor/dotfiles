@@ -25,6 +25,8 @@ TODO: Things to add here:
 
 - porfile: It sets up all aliases, bindings, and general configs.
 
+- git: Set git configuration and aliases.
+
 - (ctop)[https://github.com/bcicen/ctop]: Add ctop installation
 
 - (ripgrep)[https://github.com/BurntSushi/ripgrep]:
