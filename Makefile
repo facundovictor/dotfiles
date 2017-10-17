@@ -1,5 +1,8 @@
 .DEFAULT_GOAL := all
 
+ag:
+	dnf install the_silver_searcher
+
 ctop:
 	mkdir -p /opt/ctop/
 	wget https://github.com/bcicen/ctop/releases/download/v0.6.1/ctop-0.6.1-linux-amd64 -O /opt/ctop/ctop
@@ -19,4 +22,4 @@ powerline:
 	mkdir -p ~/.config/
 	ln -s /etc/powerline/ ~/.config/powerline
 
-all: profile powerline ctop
+all: profile ag powerline ctop
