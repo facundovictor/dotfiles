@@ -1,5 +1,9 @@
 .DEFAULT_GOAL := all
 
+ripgrep:
+	dnf copr enable carlwgeorge/ripgrep
+	dnf install ripgrep
+
 ag:
 	dnf install the_silver_searcher
 
@@ -22,4 +26,4 @@ powerline:
 	mkdir -p ~/.config/
 	ln -s /etc/powerline/ ~/.config/powerline
 
-all: profile ag powerline ctop
+all: profile ag ripgrep powerline ctop
