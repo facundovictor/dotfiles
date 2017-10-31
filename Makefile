@@ -7,6 +7,11 @@ git:
 	chmod 644 /etc/git/.gitconfig
 	ln -s /etc/git/.gitconfig ~/.gitconfig
 
+virtualenvwrapper:
+	dnf install python-pip
+	pip install --upgrade pip
+	pip install virtualenvwrapper
+
 ripgrep:
 	dnf copr enable carlwgeorge/ripgrep
 	dnf install ripgrep
@@ -33,4 +38,4 @@ powerline:
 	mkdir -p ~/.config/
 	ln -s /etc/powerline/ ~/.config/powerline
 
-all: profile ag ripgrep powerline ctop
+all: profile ag ripgrep powerline virtualenvwrapper ctop
