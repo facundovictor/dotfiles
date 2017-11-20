@@ -56,4 +56,4 @@ virtualenvwrapper:
 	pip install virtualenvwrapper
 
 
-all: _ensure_base profile ag ripgrep powerline virtualenvwrapper ctop tmuxp
+all: _ensure_base ag ripgrep powerline virtualenvwrapper ctop tmuxp profile
