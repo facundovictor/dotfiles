@@ -26,6 +26,9 @@ ctop:
 		chmod u+x /opt/ctop/ctop; \
 	fi
 
+tmuxp:
+	pip install tmuxp
+
 networking:
 	dnf install openvpn openconnect
 
@@ -53,4 +56,4 @@ virtualenvwrapper:
 	pip install virtualenvwrapper
 
 
-all: _ensure_base profile ag ripgrep powerline virtualenvwrapper ctop
+all: _ensure_base profile ag ripgrep powerline virtualenvwrapper ctop tmuxp
