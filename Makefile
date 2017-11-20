@@ -26,6 +26,9 @@ ctop:
 		chmod u+x /opt/ctop/ctop; \
 	fi
 
+networking:
+	dnf install openvpn openconnect
+
 powerline:
 	dnf install powerline powerline-fonts
 	find ./etc/powerline/ -type f -exec chmod 644 \{} \;
