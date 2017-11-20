@@ -21,8 +21,10 @@ ag:
 
 ctop:
 	mkdir -p /opt/ctop/
-	wget https://github.com/bcicen/ctop/releases/download/v0.6.1/ctop-0.6.1-linux-amd64 -O /opt/ctop/ctop
-	chmod u+x /opt/ctop/ctop
+	if [ ! -e /opt/ctop/ctop ] ; then \
+		wget https://github.com/bcicen/ctop/releases/download/v0.6.1/ctop-0.6.1-linux-amd64 -O /opt/ctop/ctop; \
+		chmod u+x /opt/ctop/ctop; \
+	fi
 
 powerline:
 	dnf install powerline powerline-fonts
