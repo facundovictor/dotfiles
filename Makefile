@@ -26,9 +26,6 @@ ctop:
 		chmod u+x /opt/ctop/ctop; \
 	fi
 
-tmuxp:
-	pip install tmuxp
-
 networking:
 	dnf install openvpn openconnect
 
@@ -51,6 +48,12 @@ profile:
 ripgrep:
 	dnf copr enable carlwgeorge/ripgrep
 	dnf install ripgrep
+
+sensors:
+	dnf install lm_sensors
+
+tmuxp:
+	pip install tmuxp
 
 virtualenvwrapper:
 	pip install virtualenvwrapper
