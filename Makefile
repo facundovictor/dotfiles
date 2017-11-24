@@ -55,8 +55,11 @@ sensors:
 tmuxp:
 	pip install tmuxp
 
+vim:
+	dnf install vim-X11
+
 virtualenvwrapper:
 	pip install virtualenvwrapper
 
 
-all: _ensure_base ag ripgrep powerline virtualenvwrapper ctop tmuxp profile
+all: _ensure_base ag ripgrep powerline virtualenvwrapper ctop tmuxp vim profile
