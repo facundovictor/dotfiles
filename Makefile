@@ -52,6 +52,9 @@ ripgrep:
 sensors:
 	dnf install lm_sensors
 
+langs:
+	dnf install ShellCheck
+
 tmuxp:
 	pip install tmuxp
 
@@ -62,4 +65,4 @@ virtualenvwrapper:
 	pip install virtualenvwrapper
 
 
-all: _ensure_base ag ripgrep powerline virtualenvwrapper ctop tmuxp vim profile
+all: _ensure_base langs ag ripgrep powerline virtualenvwrapper ctop tmuxp vim profile
