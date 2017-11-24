@@ -53,6 +53,7 @@ sensors:
 	dnf install lm_sensors
 
 langs:
+	# https://github.com/koalaman/shellcheck
 	dnf install ShellCheck
 
 tmuxp:
