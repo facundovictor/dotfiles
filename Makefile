@@ -26,6 +26,10 @@ ctop:
 		chmod u+x /opt/ctop/ctop; \
 	fi
 
+expect:
+	# A program-script interaction and testing utility (includes unbuffer)
+	dnf install expect
+
 networking:
 	dnf install openvpn openconnect
 
