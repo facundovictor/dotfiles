@@ -26,6 +26,9 @@ ctop:
 		chmod u+x /opt/ctop/ctop; \
 	fi
 
+encryption:
+	dnf install openssl
+
 expect:
 	# A program-script interaction and testing utility (includes unbuffer)
 	dnf install expect
