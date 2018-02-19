@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Print out the details of the fqdn certificate
 function getcert () {
 	local fqdn="${1:-}"
 	echo | \
