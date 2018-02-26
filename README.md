@@ -27,11 +27,11 @@ TODO: Things to add here:
 
 - git: Set git configuration and aliases.
 
-- (ctop)[https://github.com/bcicen/ctop]: Add ctop installation
+- [ctop](https://github.com/bcicen/ctop): Add ctop installation
 
-- (ripgrep)[https://github.com/BurntSushi/ripgrep]:
+- [ripgrep](https://github.com/BurntSushi/ripgrep):
 
-- (ag)[https://github.com/ggreer/the_silver_searcher]: The silver searcher
+- [ag](https://github.com/ggreer/the_silver_searcher): The silver searcher
 
 # Steps to install
 
