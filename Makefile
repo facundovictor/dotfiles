@@ -26,6 +26,13 @@ ctop:
 		chmod u+x /opt/ctop/ctop; \
 	fi
 
+dockviz:
+	mkdir -p /opt/dockviz/
+	if [ ! -e /opt/dockviz/dockviz ] ; then \
+		wget https://github.com/justone/dockviz/releases/download/v0.5.0/dockviz_linux_amd64 -O /opt/dockviz/dockviz; \
+		chmod u+x /opt/dockviz/dockviz; \
+	fi
+
 encryption:
 	dnf install openssl
 
