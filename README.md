@@ -29,6 +29,8 @@ TODO: Things to add here:
 
 - [ctop](https://github.com/bcicen/ctop): Add ctop installation
 
+- [dockviz](https://github.com/justone/dockviz): Add dockviz installation
+
 - [ripgrep](https://github.com/BurntSushi/ripgrep):
 
 - [ag](https://github.com/ggreer/the_silver_searcher): The silver searcher
