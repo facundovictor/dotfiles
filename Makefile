@@ -19,6 +19,9 @@ _ensure_base: _ensure_base_pip _ensure_base_git
 ag:
 	dnf install the_silver_searcher
 
+ctags:
+	dnf install ctags
+
 ctop:
 	mkdir -p /opt/ctop/
 	if [ ! -e /opt/ctop/ctop ] ; then \
