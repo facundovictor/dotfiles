@@ -83,4 +83,4 @@ virtualenvwrapper:
 	pip install virtualenvwrapper
 
 
-all: _ensure_base encryption langs ag ripgrep powerline virtualenvwrapper ctop tmuxp vim profile
+all: _ensure_base encryption langs ag ripgrep powerline virtualenvwrapper ctags ctop tmuxp vim profile
