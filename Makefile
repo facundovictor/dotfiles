@@ -40,6 +40,10 @@ expect:
 	# A program-script interaction and testing utility (includes unbuffer)
 	dnf install expect
 
+moreutils:
+	# Install unix utils
+	dnf install moreutils
+
 networking:
 	dnf install openvpn openconnect
 
