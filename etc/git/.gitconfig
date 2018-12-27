@@ -45,6 +45,8 @@
 
     ap ="! git add -p $(git modified-file-pick)"
 
+    commit-count = "rev-list --count --since=\"$(date '+%a %b %d 00:00:00 %Y %z')\" --before=today HEAD"
+
 [user]
     name = Facundo Victor
     email = facundovt@gmail.com
