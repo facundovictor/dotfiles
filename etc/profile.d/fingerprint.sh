@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Reference:
-# 	- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#verify-key-pair-fingerprints
+# - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#verify-key-pair-fingerprints
 
 function awsKeyFingerprint () {
     local key_path="${1:-}"
@@ -14,5 +14,19 @@ function awsKeyFingerprint-third-party () {
 
 function public_pem_to_ssh_rsa_format () {
     local key_path="${1:-}"
-    ssh-keygen -f "$key_path" -i -mPKCS8
+    ssh-keygen -f "$key_path" -i -m PKCS8
 }
+
+function ssh_rsa_to_public_pem_format () {
+    local key_path="${1:-}"
+    ssh-keygen -f "$key_path" -e -m pem
+}
+
+function public_key_from_private_key () {
+    local key_path="${1?Missing key path}"
+    local output_path="${2?Missing destination}"
+    local algorithm="${3:-rsa}"
+
+    openssl "$algorithm" -in "$key_path" -pubout > "$output_path"
+}
+
