@@ -74,7 +74,7 @@ tfenv:
 		mv /opt/tfenv/tfenv-2.2.2/* /opt/tfenv/; \
 		chmod u+x /opt/tfenv/bin/tfenv; \
 		mkdir -p /opt/tfenv/versions/;\
-		chmod 777 /opt/tfenv/versions/;\
+		chmod 777 /opt/tfenv/ /opt/tfenv/versions/;\
 	fi
 
 ripgrep:
