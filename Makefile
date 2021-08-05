@@ -66,6 +66,15 @@ profile:
 	cp -u ./etc/profile.d/* /etc/profile.d/
 	chown -R root:root /etc/profile.d/
 
+tfenv:
+	mkdir -p /opt/tfenv/
+	if [ ! -e /opt/tfenv/bin/tfenv ] ; then \
+		wget https://github.com/tfutils/tfenv/archive/refs/tags/v2.2.2.tar.gz -O /opt/tfenv/tfenv.tar.gz; \
+		tar --directory=/opt/tfenv/ -xvzf /opt/tfenv/tfenv.tar.gz; \
+		mv /opt/tfenv/tfenv-2.2.2/* /opt/tfenv/; \
+		chmod u+x /opt/tfenv/bin/tfenv; \
+	fi
+
 ripgrep:
 	dnf copr enable carlwgeorge/ripgrep
 	dnf install ripgrep
