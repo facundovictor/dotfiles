@@ -2,6 +2,9 @@
 # Original author: @juanjbrown
 ###############################################################################
 
+AWS_CREDENTIALS_PATH="~/.aws/credentials"
+AWS_CONFIG_PATH="~/.aws/config"
+
 function aws-setprofile() {
     profile=$1
     if [[ ! -n $profile ]]; then

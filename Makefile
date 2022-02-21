@@ -77,6 +77,11 @@ tfenv:
 		chmod 777 /opt/tfenv/ /opt/tfenv/versions/;\
 	fi
 
+yum_repos:
+	chmod 644 ./etc/yum.repos.d/*
+	cp -u ./etc/yum.repos.d/* /etc/yum.repos.d/
+	chown -R root:root /etc/yum.repos.d/
+
 ripgrep:
 	dnf copr enable carlwgeorge/ripgrep
 	dnf install ripgrep
@@ -92,10 +97,10 @@ tmuxp:
 	pip install tmuxp
 
 vim:
-	dnf install vim-X11
+	dnf install vim-X11 neovim
 
 virtualenvwrapper:
 	pip install virtualenvwrapper
 
 
-all: _ensure_base encryption langs ag ripgrep powerline virtualenvwrapper ctags ctop tmuxp vim profile
+all: _ensure_base yum_repos encryption langs ag ripgrep powerline virtualenvwrapper ctags ctop tmuxp vim profile
