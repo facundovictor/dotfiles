@@ -99,6 +99,10 @@ tmuxp:
 vim:
 	dnf install vim-X11 neovim
 
+visidata:
+	# https://github.com/saulpw/visidata
+	pip3 install visidata
+
 virtualenvwrapper:
 	pip install virtualenvwrapper
 
