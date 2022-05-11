@@ -19,6 +19,11 @@ _ensure_base: _ensure_base_pip _ensure_base_git
 ag:
 	dnf install the_silver_searcher
 
+assume:
+	# Reference: https://docs.commonfate.io/granted/getting-started
+	curl -OL releases.commonfate.io/granted/v0.1.16/granted_0.1.16_linux_x86_64.tar.gz; \
+    tar -zxvf ./granted_0.1.16_linux_x86_64.tar.gz -C /usr/local/bin/
+
 ctags:
 	dnf install ctags
 
