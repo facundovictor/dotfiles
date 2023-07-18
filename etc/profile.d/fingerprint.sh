@@ -29,4 +29,3 @@ function public_key_from_private_key () {
 
     openssl "$algorithm" -in "$key_path" -pubout > "$output_path"
 }
-
