@@ -32,7 +32,7 @@
 		"network_load:divider":       "background:divider",
 		"system_load":                { "fg": "gray8", "bg": "gray0", "attrs": [] },
 		"system_load_gradient":       { "fg": "green_yellow_orange_red", "bg": "gray0", "attrs": [] },
-		"environment":                { "fg": "gray8", "bg": "gray0", "attrs": [] },
+		"environment":                { "fg": "darkestblue", "bg": "black", "attrs": [] },
 		"cpu_load_percent":           { "fg": "gray8", "bg": "gray0", "attrs": [] },
 		"cpu_load_percent_gradient":  { "fg": "green_yellow_orange_red", "bg": "gray0", "attrs": [] },
 		"battery":                    { "fg": "gray8", "bg": "gray0", "attrs": [] },

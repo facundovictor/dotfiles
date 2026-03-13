@@ -19,6 +19,13 @@
             "priority": 50
           },
           {
+            "function": "powerline.segments.common.env.environment",
+            "args": {
+              "variable": "CURRENT_KUBE_CONTEXT_PS1"
+            },
+            "priority": 50
+          },
+          {
             "function": "powerline.segments.shell.cwd",
             "priority": 10
           },

@@ -1,6 +1,9 @@
 {
 	"common": {
-		"term_truecolor": false
+		"term_truecolor": false,
+    "paths": [
+      "~/.config/powerline"
+    ]
 	},
 	"ext": {
 		"ipython": {
@@ -18,7 +21,7 @@
 		},
 		"shell": {
 			"colorscheme": "dark",
-			"multiline": "multiline",
+			"theme": "multiline",
 			"local_themes": {
 				"continuation": "continuation",
 				"select": "select"
